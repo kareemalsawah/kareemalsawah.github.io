@@ -104,9 +104,10 @@ figure {
     border-radius: 50%; }
   #colorlib-aside .position {
     display: block;
-    margin-bottom: 2em;
+    margin-bottom: 0.5em;
     font-size: 12px;
     text-transform: uppercase; }
+
   #colorlib-aside #colorlib-logo {
     text-align: right;
     font-weight: 700;
@@ -215,6 +216,20 @@ figure {
             outline: none;
             color: #2c98f0; }
 
+#socials{
+  list-style: none;
+  display: inline;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  outline:none;
+}
+#socials a{
+  color:#333333;
+}
+#socials a:hover{
+  color: #2c98f0;
+}
 .container-wrap {
   max-width: 1170px;
   margin: 0 auto; }
@@ -363,7 +378,8 @@ body.offcanvas {
     transform: translateX(300px); }
 
 .colorlib-narrow-content {
-  padding: 0 2.5em; }
+  padding: 0 2.5em; 
+  margin-top:-100px;}
   @media screen and (max-width: 768px) {
     .colorlib-narrow-content {
       padding: 0; } }
@@ -738,7 +754,8 @@ body.offcanvas {
   -webkit-box-shadow: none;
   box-shadow: none;
   background: #f2f3f7;
-  overflow: visible; }
+  overflow: visible;
+  margin-top:20px; }
 
 .progress-bar {
   background: #2c98f0;
@@ -769,7 +786,7 @@ body.offcanvas {
     border-radius: 50%; }
   .progress-bar span {
     position: absolute;
-    top: -22px;
+    top: -15px;
     right: 0; }
   .progress-bar.color-1 {
     background: #2c98f0; }
@@ -1427,3 +1444,15 @@ body.offcanvas {
 
 .js .animate-box {
   opacity: 0; }
+
+#background_black{
+  position:absolute;
+  top:10%;
+  left:0;
+  right:0;
+  bottom:10%;
+  background-color: rgba(0,0,0,0.5);
+  filter: blur(15px);
+  z-index:-1;
+  border-radius:10px;
+}
